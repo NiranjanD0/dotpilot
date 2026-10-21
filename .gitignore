@@ -19,10 +19,14 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
 *.pem
+.idea/
+.vscode/*
+!.vscode/extensions.json
 
 # debug
 npm-debug.log*
@@ -32,6 +36,7 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -44,4 +49,8 @@ next-env.d.ts
 
 # rust / cargo
 /target/
+src-tauri/target/
 **/*.rs.bk
+
+# tauri
+src-tauri/gen/schemas
